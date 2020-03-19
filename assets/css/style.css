@@ -1,0 +1,22 @@
+body
+{
+  background-color: antiquewhite;
+}
+
+svg
+{
+  padding: 30vh 30vw;
+}
+
+button
+{
+  background-color: inherit;
+  border: none;
+  color: black;
+  visibility: hidden;
+}
+
+svg:hover.button
+{
+  visibility: visible;
+}
