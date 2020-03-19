@@ -3,9 +3,14 @@ body
   background-color: antiquewhite;
 }
 
+.foot
+{
+  display: flex;
+  justify-content: space-between;
+}
+
 svg
 {
-  padding: 30vh 30vw;
   fill: white;
   cursor: pointer;
 }
@@ -13,10 +18,9 @@ svg
 .button
 {
   background-color: inherit;
-  padding: 12vh 12vw;
   border: none;
   color: black;
-  display: none;
+  visibility: hidden;
   font-size: 2em;
 }
 
@@ -54,4 +58,9 @@ svg
 {
   fill: blue;
   stroke: black;
+}
+
+.ligne, .film, .triangle
+{
+  visibility: hidden;
 }
