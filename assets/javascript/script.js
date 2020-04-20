@@ -147,63 +147,6 @@ document.querySelector('#box').addEventListener('mouseout', function () {
 })
 }
 
-// ROTATION L'histoire Trouble de M.pierre
-
-if (document.querySelector('.lhistoiretroubledempierre')) {
-
-let keepgoing = true;
-
-function trombiDynamique2() {
-
-  imageVisible = '<img border="0" src="'+ pictures[chiffre] +'">';
-  document.getElementById("box").innerHTML = imageVisible;
-  if(chiffre == longueur)
-      { chiffre = 0; }
-      else
-      { chiffre++; }
-  changement = 1;
-
-  if(keepgoing){
-    window.setTimeout("trombiDynamique2()", (changement*2000));
-  }
-
-}
-
-pictures = new Array()
-pictures[0] = 'assets/images/lhistoiretroubledempierre1.jpg';
-pictures[1] = 'assets/images/lhistoiretroubledempierre2.jpg';
-pictures[2] = 'assets/images/lhistoiretroubledempierre3.jpg';
-pictures[3] = 'assets/images/lhistoiretroubledempierre4.jpg';
-pictures[4] = 'assets/images/lhistoiretroubledempierre5.jpg';
-longueur = pictures.length-1;
-
-liens = new Array()
-liens[0] = 'lien_image1.html';
-liens[1] = 'lien_image2.html';
-liens[2] = 'lien_image3.html';
-liens[3] = 'lien_image4.html';
-liens[4] = 'lien_image5.html';
-chiffre = 0;
-
-function startTrombi2 () {
-  keepgoing = true;
-  trombiDynamique2();
-}
-
-function stopTrombi () {
-  keepgoing = false;
-}
-
-document.querySelector('#box').addEventListener('mouseenter', function () {
-  stopTrombi();
-})
-
-document.querySelector('#box').addEventListener('mouseout', function () {
-  startTrombi2();
-})
-}
-
-
 
 // ///////////////////////////////////////////// REMAIN
 //
