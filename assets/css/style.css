@@ -96,6 +96,11 @@ font-size: 								2.3em;
 	color: 									black;
 }
 
+.text-deco-none
+{
+	text-decoration: 				none;
+}
+
 /***************Border  */
 
 .borderbot
@@ -172,13 +177,6 @@ font-size: 								2.3em;
 	line-height: 0;
 }
 
-.wrapper img:hover
-{
- opacity: 0.5;
- transform: scale(1.2);
- position: 50% 50%;
-}
-
 .wrapper .image
 {
 	background-color: blue;
@@ -186,6 +184,7 @@ font-size: 								2.3em;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	position: relative;
 }
 
 .wrapper img
@@ -196,6 +195,51 @@ font-size: 								2.3em;
 	transition: .5s ease-in-out;
 }
 
+.wrapper img:hover
+{
+ opacity: 0.5;
+ transform: scale(1.2);
+ position: 50% 50%;
+}
+
+.wrapper .image .text
+{
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 1em;
+pointer-events: none;
+z-index: 4;
+transition: .3s ease-in-out;
+text-align: center;
+padding: 1em;
+width: 100%;
+/* -webkit-backdrop-filter: blur(5px) saturate(1.8);
+backdrop-filter: blur(5px) saturate(1.8); */
+}
+
+.wrapper .image:hover .text{
+	opacity: 1;
+	animation: move-down .3s linear;
+	padding: 1em;
+	width: 100%;
+}
+
+@keyframes move-down
+{
+	0% {
+		top: 10%;
+	}
+	50% {
+			top: 35%;
+		}
+	100% {
+			top: 50%;
+		}
+}
 /****************** MARGIN  */
 
 .margtopbot3
