@@ -885,6 +885,11 @@ backdrop-filter: blur(5px) saturate(1.8); */
 	width: calc(100px + 16vw);
 }
 
+.fullWidth
+{
+	width: 100%;
+}
+
 
 /************************* Menu */
 
@@ -1095,20 +1100,14 @@ svg
 @media only screen and (min-width: 200px) and (max-width: 1023px)
 {
 
+		.navEntry
+		{
+			font-size: 0.9em
+		}
+
 		.titleMedia
 		{
 			font-size: 1.3em;
-			margin-top: 15vh;
-		}
-
-		.cartel p
-		{
-			font-size: 1em;
-		}
-
-		.cartel2 p
-		{
-			font-size: 0.8em;
 		}
 
 		.cartel
@@ -1191,11 +1190,6 @@ svg
 			font-size: 1em;
 		}
 
-		.link-np
-		{
-			margin-top: 13vh;
-		}
-
 		.link-np a
 		{
 			font-size: 0.8em;
@@ -1206,17 +1200,44 @@ svg
 			margin-top: 20vh;
 		}
 
-		.quote
+		.details
 		{
-			font-size: 0.8em;
-			margin-top: 16vh;
-			text-align: center;
-			margin-left: 5vw;
-			margin-right: 5vw;
-			background-color: black;
-			color: #fff;
-			font-family: courier;
-			padding: 3vh;
+			top: 140%;
 		}
 
+		.details-synopsis-credits
+		{
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.details-credits
+		{
+			width: calc(200px + 20vw);
+			margin-left: 0;
+			margin-top: 5vh;
+		}
+
+		.margtop55
+		{
+    	margin-top: 85vh;
+		}
+
+		.quote
+		{
+			width: calc(200px + 20vw);
+			margin-top: 2vh;
+		}
+
+		.width200
+		{
+    width: calc(200px + 31vw);
+		}
+
+		.details
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 }
