@@ -853,6 +853,11 @@ backdrop-filter: blur(5px) saturate(1.8); */
 	margin-top: 						55vh;
 }
 
+.margtop60
+{
+	margin-top: 						60vh;
+}
+
 .margtop70
 {
 	margin-top: 						70vh;
@@ -1230,12 +1235,16 @@ svg
 		{
 			width: 100%;
 			margin-left: 0;
-			margin-top: 5vh;
 		}
 
-		.margtop55, .martop70, .margtop40
+		.margtop55, .margtop40
 		{
     	margin-top: calc(400px + 19vh);
+		}
+
+		.margtop60
+		{
+			margin-top: calc(500px + 55vh);
 		}
 
 		.quote
