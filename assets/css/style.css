@@ -1237,11 +1237,16 @@ svg
 			margin-left: 0;
 		}
 
-		.margtop55, .margtop40
+		.margtop55
 		{
     	margin-top: calc(400px + 19vh);
 		}
 
+		.margtop40
+		{
+			margin-top: calc(300px + 20vh);
+		}
+		
 		.margtop60
 		{
 			margin-top: calc(500px + 55vh);
