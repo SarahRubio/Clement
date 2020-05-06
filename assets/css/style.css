@@ -659,7 +659,6 @@ font-size: 								2.3em;
 
 .wrapper .image
 {
-	background-color: blue;
 	line-height: 0;
 	width: 100%;
 	height: 100%;
@@ -673,6 +672,11 @@ font-size: 								2.3em;
 	height: 100%;
 	object-fit: cover;
 	transition: .5s ease-in-out;
+}
+
+.wrapper .image:hover
+{
+	background-color: blue;
 }
 
 .wrapper img:hover
