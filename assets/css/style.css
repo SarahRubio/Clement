@@ -55,6 +55,41 @@ body
 }
 
 /************* FONT  */
+@font-face {
+    font-family: 'Ingleby_italic';
+    src: url('../font/Ingleby_italic.ttf');
+}
+
+.fontIngleby
+{
+	font-family: 'Ingleby_italic';
+}
+
+.fontRoboto
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Andale-Mono';
+    src: url('../font/AndaleMono.ttf');
+}
+
+.fontAndalemono
+{
+	font-family: 'Andale-Mono';
+}
+
+@font-face {
+    font-family: 'Josephin';
+    src: url('../font/Josephin.ttf');
+}
+
+.fontJosephin
+{
+	font-family: 'Josephin';
+}
 
 .maj
 {
