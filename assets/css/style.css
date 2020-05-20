@@ -1267,7 +1267,7 @@ svg
 	.hs-wrapperFille .image img
 	{
 		width: 1280px;
-		height: 470px;
+		height: 485px;
 	}
 
 	.hs-wrapperNiaiseries, .hs-wrapperKlaxon
@@ -1380,6 +1380,10 @@ svg
 		{
 			width: 320px;
 			height: 141.5px;
+		}
+
+		.hs-wrapperFille .image {
+    top: 11%;
 		}
 
 		.hs-wrapperNiaiseries, .hs-wrapperKlaxon
