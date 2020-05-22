@@ -37,7 +37,7 @@ animated_text1()
 // Affichage path (refactorisation)
 
 function RendreVisible(classPath) {
-  document.querySelectorAll('[data-color="' + classPath + '"]').forEach(function(path){
+  document.querySelectorAll(`[data-color="${classPath}"]`).forEach(function(path){
     path.style.visibility="visible";
   });
 };
