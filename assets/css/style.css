@@ -1078,6 +1078,11 @@ backdrop-filter: blur(5px) saturate(1.8); */
 	padding-bottom: 				5vh;
 }
 
+.padbot2
+{
+	padding-bottom: 				2vh;
+}
+
 .width200
 {
 	width: calc(200px + 20vw);
@@ -1471,5 +1476,10 @@ svg
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+		}
+
+		.wrapper .image .text
+		{
+			font-size: 0.8em;
 		}
 }
