@@ -80,13 +80,12 @@ document.querySelector('.red').addEventListener("mouseout", function () {
       liens[4] = 'lien_image5.html';
 
       function startTrombi() {
-          if (index > pictures.length) {
-            index = 0;
-          }
-          changerImage(index);
-          index++;
-          timer = window.setTimeout(startTrombi(), 2000);
-        console.log("InsidestartTrombi");
+        if (index > pictures.length) {
+          index = 0;
+        }
+        changerImage(index);
+        index++;
+        timer = window.setTimeout(startTrombi, 2000);
       }
 
       console.log("startTrombi");
