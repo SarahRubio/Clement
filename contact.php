@@ -21,7 +21,7 @@
             <ul>
               <li><a href="about.html" class="navEntry maj fontblack marglr2 padfull1">about</a></li>
               <li><a href="works.html" class="navEntry maj fontblack marglr2 padfull1">works</a></li>
-              <li><a href="contact.html" class="navEntry maj fontblack marglr2 padfull1">contact</a></li>
+              <li><a href="contact.php" class="navEntry maj fontblack marglr2 padfull1">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -36,18 +36,21 @@
 
   <main class="column aicenter margtop13">
 
-      <h2 class="titleMedia maj font23 fontgrey bold margbot5 textcenter fontAndalemono">Contact</h2>
+      <h2 class="titleMedia maj font23 fontgrey bold textcenter fontAndalemono padbot1">Contact</h2>
 
           <?php
-              if (
-                isset($_SESSION["erreur"]) &&
-                $_SESSION["erreur_envoi"] === true) {
-                    echo "<p class='tcenter font09'>Une erreur s'est produite. Veuillez vérifier les champs du formulaire</p>";
+              if (isset($_SESSION["erreur"]) && $_SESSION["erreur"] === true) {
+                    echo "<p class='tcenter fontRed font09'>Une erreur s'est produite. Veuillez vérifier les champs du formulaire</p>";
                     unset($_SESSION["erreur"]);
+              }
+
+              if (isset($_SESSION["erreur"]) && $_SESSION["erreur"] === false) {
+                echo "<p class='tcenter fontBlue font09'>Votre message a bien été envoyé.</p>";
+                unset($_SESSION["erreur"]);
               }
            ?>
 
-      <div class="flex column aicenter fontRoboto">
+      <div class="flex column aicenter fontRoboto margtop5">
         <form class="" action="envoiForm.php" method="post">
 
           <div class="flex column margbot4">
@@ -65,7 +68,7 @@
             <textarea name="message" rows="8" cols="80" class="padfull1"></textarea>
           </div>
 
-          <input type="submit" name="envoyer" value="Envoyer" class="padfull1 bgWhite submitButton">
+          <input type="submit" name="envoyer" value="Envoyer" class="padfull1 bgWhite submitButton font1">
 
         </form>
 

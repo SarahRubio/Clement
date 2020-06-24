@@ -70,7 +70,6 @@ body
 	font-family: 'Roboto', sans-serif;
 }
 
-
 @font-face {
     font-family: 'Andale-Mono';
     src: url('../font/AndaleMono.ttf');
@@ -122,6 +121,11 @@ text-transform:						uppercase;
 font-size: 								0.9em;
 }
 
+.font1
+{
+font-size: 								1em;
+}
+
 .font13
 {
 font-size: 								1.3em;
@@ -145,6 +149,16 @@ font-size: 								2.3em;
 .fontwhite
 {
 	color: 									#fff;
+}
+
+.fontRed
+{
+	color: 									red;
+}
+
+.fontBlue
+{
+	color: 									blue;
 }
 
 .fontgrey
@@ -1096,6 +1110,11 @@ backdrop-filter: blur(5px) saturate(1.8); */
 .padbot2
 {
 	padding-bottom: 				2vh;
+}
+
+.padbot1
+{
+	padding-bottom: 				1vh;
 }
 
 .width200

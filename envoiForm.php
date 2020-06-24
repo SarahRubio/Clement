@@ -2,11 +2,15 @@
 
 session_start();
 
+htmlspecialchars($_POST['nom']);
+htmlspecialchars($_POST['email']);
+htmlspecialchars($_POST['message']);
+
     if(
       !empty($_POST["nom"]) &&
       !empty($_POST["email"]) &&
       false !== filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) &&
-      !empty($_POST["message"])) && {
+      !empty($_POST["message"])) {
 
           $to = 'sarahrubio.pro@gmail.com';
 
@@ -22,8 +26,9 @@ session_start();
           'Reply-To: s.rubio@live.fr' . "\r\n" .
           'X-Mailer: PHP/' . phpversion();
 
-          mail($to, $subject, $message, $headers);
+          mail($to, $subject, $nom, $message, $headers);
 
+          $_SESSION["erreur"] = false;
           header("location:contact.php");
           exit;
     }
